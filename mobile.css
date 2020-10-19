@@ -1,0 +1,9 @@
+.container {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 'header header header'
+                       'nav nav nav'
+                       'aside aside aside'
+                       'content content content'
+                       'section section section'
+                       'footer footer footer';
+}
