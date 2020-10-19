@@ -2,10 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flex vs Grid</title>
-    <link rel = "stylesheet"
-          type = "text/css"
-          href = "style.css" />
+    <title>Flex</title>
+    <style>
+        .flex-wrapper-top {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: darkkhaki;
+            flex-direction: column;
+        }
+
+        .flex-wrapper-top > div {
+            background-color: green;
+            height: auto;
+            width: auto;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .flex-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            flex-direction: column;
+        }
+
+        .flex-wrapper > div {
+            background-color: green;
+            height: auto;
+            width: auto;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
 <div class="flex-wrapper-top">
