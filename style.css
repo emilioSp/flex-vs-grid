@@ -1,3 +1,19 @@
+.flex-wrapper-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: darkkhaki;
+    flex-direction: column;
+}
+
+.flex-wrapper-top > div {
+    background-color: green;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
 .flex-wrapper {
     display: flex;
     justify-content: center;
@@ -10,7 +26,6 @@
     background-color: green;
     height: auto;
     width: auto;
-    max-width: 1000px;
     margin: 10px;
     padding: 10px;
 }
