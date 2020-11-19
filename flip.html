@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 500px;
+            width: 500px;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+
+        #back {
+            transform: rotateY(180deg);
+            background-color: green;
+        }
+
+        #front {
+            transform: rotateY(0deg);
+            background-color: indianred;
+        }
+
+        #back.rotate {
+            transform: rotateY(0deg);
+        }
+
+        #front.rotate {
+            transform: rotateY(180deg);
+        }
+
+    </style>
+
+    <script>
+        function rotate() {
+          const front = document.getElementById('front');
+          const back = document.getElementById('back');
+          console.log(back.classList);
+          if (back.classList.length === 0) {
+            back.className = 'rotate';
+            front.className = 'rotate';
+          } else {
+            back.className = '';
+            front.className = '';
+          }
+        }
+    </script>
+</head>
+<body>
+<div id="front" onclick="rotate()">Front</div>
+<div id="back" onclick="rotate()">Back</div>
+</body>
+</html>
